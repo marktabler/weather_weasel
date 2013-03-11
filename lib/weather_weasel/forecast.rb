@@ -9,7 +9,7 @@ module WeatherWeasel
     end
         
     def raw_data
-      @client.parse_url("forecast/q/#{@state}/#{@city}.json")
+      @raw_data ||= @client.parse_url("forecast/q/#{@state}/#{@city}.json")
     end
 
     def forecast_days    
