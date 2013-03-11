@@ -14,6 +14,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'httparty', ">= 0.10.2"
   gem.add_dependency 'rspec'
   gem.add_dependency 'vcr'
+  gem.add_dependency 'fakeweb'
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }

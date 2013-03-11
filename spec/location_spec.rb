@@ -7,7 +7,7 @@ describe WeatherWeasel::Location do
   
   it "returns a high temperature", :vcr do
       @location = WeatherWeasel::Location.new("Portland", "OR")
-      @location.high.should == 59
+      @location.high.should == 64
   end
  
 end
